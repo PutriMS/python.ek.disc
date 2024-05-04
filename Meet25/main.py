@@ -1,0 +1,26 @@
+import time
+import FISIKA
+
+def batas():
+    print("-"*100)
+waktuawal = time.time()
+print(f"Massa Jenis = {FISIKA.massajenis.massajenis(11,1)}")
+print(f"Massa Jenis = {FISIKA.massajenis.massa(11,1)}")
+print(f"Massa Jenis = {FISIKA.massajenis.volume(11,1)}")
+waktuakhir = time.time()
+print(f"waktu yg dibutuhkan = {waktuakhir - waktuawal}")
+batas()
+print(f"usaha = {FISIKA.U(12,2)}")
+print(f"Gaya = {FISIKA.G(12,2)}")
+print(f"Jarak = {FISIKA.s   (12,2)}")
+batas()
+print(f"Ek = {FISIKA.Ep(24,2,2)}")
+print(f"Ek = {FISIKA.Ek(24,2)}")
+print(f"Ek = {FISIKA.Ek(10,10)}")
+batas()
+diskon10 = FISIKA.JL(10)
+diskon20 = FISIKA.JL(20)
+diskon30 = FISIKA.JL(30)
+print(f"diskon 10% = {diskon10(10000)}")
+print(f"diskon 20% = {diskon20(10000)}")
+print(f"diskon 30% = {diskon30(10000)}")
